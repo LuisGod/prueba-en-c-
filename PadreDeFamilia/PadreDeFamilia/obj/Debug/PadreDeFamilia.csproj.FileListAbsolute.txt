@@ -1,0 +1,9 @@
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\bin\Debug\PadreDeFamilia.exe.config
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\bin\Debug\PadreDeFamilia.exe
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\bin\Debug\PadreDeFamilia.pdb
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\obj\Debug\PadreDeFamilia.csprojResolveAssemblyReference.cache
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\obj\Debug\PadreDeFamilia.exe
+c:\users\adrian\documents\visual studio 2012\Projects\PadreDeFamilia\PadreDeFamilia\obj\Debug\PadreDeFamilia.pdb
+C:\Users\Luis1990\Desktop\tarea examen\PadreDeFamilia\PadreDeFamilia\bin\Debug\PadreDeFamilia.exe.config
+C:\Users\Luis1990\Desktop\tarea examen\PadreDeFamilia\PadreDeFamilia\obj\Debug\PadreDeFamilia.exe
+C:\Users\Luis1990\Desktop\tarea examen\PadreDeFamilia\PadreDeFamilia\obj\Debug\PadreDeFamilia.pdb

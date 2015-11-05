@@ -1,0 +1,36 @@
+CREATE TABLE PadreFamiliaPersonajes (
+	PersonajeID int IDENTITY(1,1) PRIMARY KEY,
+	Nombre VARCHAR (100) NOT NULL,
+	Apellido VARCHAR (100) NOT NULL,
+	Descripcion VARCHAR (100) NOT NULL,
+)
+
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Peter' ,  'Griffin' ,  'Es el protagonista de la serie y el más cómico')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Lois' ,  'Griffin' ,  'Es la esposa de Peter')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Megan' ,  'Griffin' ,  'Es la hija mayor y la única chica')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Chris' ,  'Griffin' ,  'Chris es el hijo mediano con trece años')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Stewie' ,  'Griffin' ,  'Stewie posee una gran capacidad mental e intelectual')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Brian' ,  'Griffin' ,  'Es el perro de los Griffin')
+
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Cleveland' ,  'Brown' ,  'afro-estadounidense')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Loretta' ,  'Brown' ,  'Fue la Esposa de Cleveland')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Cleveland Jr.' ,  'Brown' ,  'Es el hijo de Cleveland y de Loretta y tiene un problema de hiperactividad')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Glenn' ,  'Quagmire' ,  'Piloto aéreo en la aerolínea comercial Transnational')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('(Joe' ,  'Swanson' ,  'policía paralítico')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Mort' ,  'Goldman' ,  ' farmaceútico hipocondriáco')
+INSERT INTO PadreFamiliaPersonajes (Nombre, Apellido, Descripcion) VALUES ('Carter' ,  'Pewterschmidt' ,  ' farmaceútico hipocondriáco')
+
+
+CREATE PROCEDURE PersonajesPorApellido
+@pApellido VARCHAR(100)
+AS
+SET NOCOUNT ON
+BEGIN
+	SELECT PersonajeID, Nombre, Apellido, Descripcion 
+	FROM PadreFamiliaPersonajes 
+	WHERE Apellido LIKE @pApellido
+END
+SET NOCOUNT OFF
+GO
+
+EXEC PersonajesPorApellido @pApellido = 'Griffin'
