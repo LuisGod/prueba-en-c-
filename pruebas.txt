@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Michael
 =======
 Luis Godinez hernandez
+>>>>>>> origin/master
+=======
+Luis Godinez hernandez
+Jose David Vargas Fernandez
 >>>>>>> origin/master
